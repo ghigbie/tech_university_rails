@@ -11,9 +11,16 @@
   </head>
 
   <body>
-    <%= render "partials/nav" %>
-    <div class="container">
-      <%= yield %>
-    </div>
+    <header>
+      <%= render "partials/nav" %>
+    </header>
+    <main>
+      <div class="container">
+        <%= yield %>
+      </div>
+    </main>
+    <footer>
+      <%= render "partials/footer" %>
+    </footer>
   </body>
 </html>
